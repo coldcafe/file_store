@@ -5,6 +5,6 @@ WORKDIR /app
 COPY ./package.json /app/
 RUN npm install
 COPY ./ /app/
-CMD ["node ./lib/index.js -p 8080 -d /file_store"]
+CMD ["npm", "start"]
 
-EXPOSE 8080
+EXPOSE 5000
